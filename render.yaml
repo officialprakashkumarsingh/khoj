@@ -4,8 +4,6 @@ services:
     name: khoj-database
     env: postgresql
     plan: starter
-    databaseName: khoj
-    user: khoj_user
 
   # Khoj Web Service
   - type: web
