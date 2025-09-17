@@ -4,6 +4,14 @@
 
 [![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/officialprakashkumarsingh/khoj)
 
+**Note**: The one-click deploy uses Render's free tier, which has some limitations:
+- Apps sleep after 15 minutes of inactivity
+- Limited to 750 hours per month
+- Slower cold starts
+- No persistent storage between deployments
+
+For production use, consider upgrading to a paid plan after initial setup.
+
 ## Manual Deployment Steps
 
 If you prefer to deploy manually or need to customize the deployment:
@@ -45,8 +53,14 @@ Fork this repository to your GitHub account.
    - **Database**: khoj
    - **User**: khoj_user
    - **Region**: Same as your web service
-   - **Plan**: Starter (free tier available)
+   - **Plan**: Free (1 GB storage, limited connections)
 3. After creating the database, note down the connection details
+
+**Note**: The free PostgreSQL tier has limitations:
+- 1 GB storage
+- Limited connections
+- Data may not persist between deployments
+- Consider upgrading to a paid plan for production use
 
 ### 5. Environment Variables
 Add these environment variables in your web service settings:

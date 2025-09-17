@@ -74,7 +74,9 @@ You can see the full feature list [here](https://docs.khoj.dev/category/features
 ### 🚀 One-Click Deploy to Render
 [![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/officialprakashkumarsingh/khoj)
 
-Deploy Khoj to Render with a single click. No setup required - just click the button above and follow the prompts.
+Deploy Khoj to Render with a single click. Uses free tier - apps sleep after 15 minutes of inactivity. For production use, upgrade to a paid plan.
+
+**Alternative**: For a more manual setup without payment requirements, [follow our step-by-step guide](DEPLOY_TO_RENDER.md).
 
 ### 🐳 Docker Deployment
 To get started with self-hosting Khoj using Docker, [read the docs](https://docs.khoj.dev/get-started/setup).
