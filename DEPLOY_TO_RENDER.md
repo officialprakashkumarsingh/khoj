@@ -78,6 +78,8 @@ KHOJ_ADMIN_EMAIL=admin@example.com
 KHOJ_ADMIN_PASSWORD=<generate a secure password>
 KHOJ_NO_HTTPS=False
 PORT=10000
+PYTHON_VERSION=3.12.7
+NODE_VERSION=18
 ```
 
 **Note**: The one-click deploy button will create the web service, but you'll need to manually create the PostgreSQL database and add the database environment variables to your web service.
