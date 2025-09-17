@@ -12,12 +12,14 @@ services:
     name: khoj-app
     env: python
     plan: starter
+    region: oregon
     buildCommand: |
       pip install --upgrade pip
       pip install -r requirements.txt
       cd src/interface/web && npm install && npm run build
       cd ../../../ && python src/khoj/manage.py collectstatic --noinput
     startCommand: gunicorn -c gunicorn-config.py src.khoj.main:app
+    healthCheckPath: /api/health
     envVars:
       - key: POSTGRES_HOST
         fromService:
@@ -56,3 +58,7 @@ services:
         value: "False"
       - key: PORT
         value: "10000"
+      - key: PYTHON_VERSION
+        value: "3.12"
+      - key: NODE_VERSION
+        value: "18"
