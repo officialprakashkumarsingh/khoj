@@ -1,6 +1,6 @@
 import os
 
-bind = "0.0.0.0:42110"
+bind = "0.0.0.0:" + os.environ.get("PORT", "42110")
 
 # Worker Configuration
 workers = int(os.environ.get("GUNICORN_WORKERS", 6))

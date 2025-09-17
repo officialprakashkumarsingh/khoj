@@ -1,0 +1,58 @@
+services:
+  # PostgreSQL Database
+  - type: pserv
+    name: khoj-database
+    env: postgresql
+    plan: starter
+    databaseName: khoj
+    user: khoj_user
+
+  # Khoj Web Service
+  - type: web
+    name: khoj-app
+    env: python
+    plan: starter
+    buildCommand: |
+      pip install --upgrade pip
+      pip install -r requirements.txt
+      cd src/interface/web && npm install && npm run build
+      cd ../../../ && python src/khoj/manage.py collectstatic --noinput
+    startCommand: gunicorn -c gunicorn-config.py src.khoj.main:app
+    envVars:
+      - key: POSTGRES_HOST
+        fromService:
+          type: pserv
+          name: khoj-database
+          property: host
+      - key: POSTGRES_PORT
+        fromService:
+          type: pserv
+          name: khoj-database
+          property: port
+      - key: POSTGRES_USER
+        fromService:
+          type: pserv
+          name: khoj-database
+          property: user
+      - key: POSTGRES_PASSWORD
+        fromService:
+          type: pserv
+          name: khoj-database
+          property: password
+      - key: POSTGRES_DB
+        fromService:
+          type: pserv
+          name: khoj-database
+          property: database
+      - key: KHOJ_DJANGO_SECRET_KEY
+        generateValue: true
+      - key: KHOJ_DEBUG
+        value: "False"
+      - key: KHOJ_ADMIN_EMAIL
+        value: "admin@example.com"
+      - key: KHOJ_ADMIN_PASSWORD
+        generateValue: true
+      - key: KHOJ_NO_HTTPS
+        value: "False"
+      - key: PORT
+        value: "10000"
