@@ -2,9 +2,9 @@
 
 <div align="center">
 
-[![test](https://github.com/khoj-ai/khoj/actions/workflows/test.yml/badge.svg)](https://github.com/khoj-ai/khoj/actions/workflows/test.yml)
-[![docker](https://github.com/khoj-ai/khoj/actions/workflows/dockerize.yml/badge.svg)](https://github.com/khoj-ai/khoj/pkgs/container/khoj)
-[![pypi](https://github.com/khoj-ai/khoj/actions/workflows/pypi.yml/badge.svg)](https://pypi.org/project/khoj/)
+[![test](https://github.com/officialprakashkumarsingh/khoj/actions/workflows/test.yml/badge.svg)](https://github.com/officialprakashkumarsingh/khoj/actions/workflows/test.yml)
+[![docker](https://github.com/officialprakashkumarsingh/khoj/actions/workflows/dockerize.yml/badge.svg)](https://github.com/officialprakashkumarsingh/khoj/pkgs/container/khoj)
+[![pypi](https://github.com/officialprakashkumarsingh/khoj/actions/workflows/pypi.yml/badge.svg)](https://pypi.org/project/khoj/)
 [![discord](https://img.shields.io/discord/1112065956647284756?style=plastic&label=discord)](https://discord.gg/BDgyabRM6e)
 
 </div>
@@ -31,7 +31,7 @@
 
 <br /><br />
 
-[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/khoj-ai/khoj)
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/officialprakashkumarsingh/khoj)
 
 </div>
 
@@ -62,7 +62,7 @@
 
 ## See it in action
 
-![demo_chat](https://github.com/khoj-ai/khoj/blob/master/documentation/assets/img/quadratic_equation_khoj_web.gif?raw=true)
+![demo_chat](https://github.com/officialprakashkumarsingh/khoj/blob/master/documentation/assets/img/quadratic_equation_khoj_web.gif?raw=true)
 
 Go to https://app.khoj.dev to see Khoj live.
 
@@ -72,7 +72,7 @@ You can see the full feature list [here](https://docs.khoj.dev/category/features
 ## Deploy & Self-Host
 
 ### 🚀 One-Click Deploy to Render
-[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/khoj-ai/khoj)
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/officialprakashkumarsingh/khoj)
 
 Deploy Khoj to Render with a single click. No setup required - just click the button above and follow the prompts.
 
@@ -105,7 +105,7 @@ For more questions, head over to our [Discord](https://discord.gg/BDgyabRM6e)!
 ## Contributors
 Cheers to our awesome contributors! 🎉
 
-<a href="https://github.com/khoj-ai/khoj/graphs/contributors">
+<a href="https://github.com/officialprakashkumarsingh/khoj/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=khoj-ai/khoj" />
 </a>
 
@@ -118,4 +118,4 @@ Why Contribute?
 - Make an Impact: Help build, test and improve a tool used by thousands to boost productivity.
 - Learn & Grow: Work on cutting-edge AI, LLMs, and semantic search technologies.
 
-You can help us build new features, improve the project documentation, report issues and fix bugs. If you're a developer, please see our [Contributing Guidelines](https://docs.khoj.dev/contributing/development) and check out [good first issues](https://github.com/khoj-ai/khoj/contribute) to work on.
+You can help us build new features, improve the project documentation, report issues and fix bugs. If you're a developer, please see our [Contributing Guidelines](https://docs.khoj.dev/contributing/development) and check out [good first issues](https://github.com/officialprakashkumarsingh/khoj/contribute) to work on.
