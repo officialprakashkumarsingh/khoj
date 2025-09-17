@@ -46,6 +46,7 @@ Fork this repository to your GitHub account.
    - **User**: khoj_user
    - **Region**: Same as your web service
    - **Plan**: Starter (free tier available)
+3. After creating the database, note down the connection details
 
 ### 5. Environment Variables
 Add these environment variables in your web service settings:
@@ -64,6 +65,8 @@ KHOJ_ADMIN_PASSWORD=<generate a secure password>
 KHOJ_NO_HTTPS=False
 PORT=10000
 ```
+
+**Note**: The one-click deploy button will create the web service, but you'll need to manually create the PostgreSQL database and add the database environment variables to your web service.
 
 **Optional Variables (for enhanced features):**
 ```

@@ -1,9 +1,4 @@
 services:
-  # PostgreSQL Database
-  - type: pserv
-    name: khoj-database
-    plan: starter
-
   # Khoj Web Service
   - type: web
     name: khoj-app
@@ -18,22 +13,6 @@ services:
     startCommand: gunicorn -c gunicorn-config.py src.khoj.main:app
     healthCheckPath: /api/health
     envVars:
-      - key: POSTGRES_HOST
-        fromService:
-          type: pserv
-          name: khoj-database
-          property: host
-      - key: POSTGRES_PORT
-        fromService:
-          type: pserv
-          name: khoj-database
-          property: port
-      - key: POSTGRES_USER
-        value: "khoj_user"
-      - key: POSTGRES_PASSWORD
-        generateValue: true
-      - key: POSTGRES_DB
-        value: "khoj"
       - key: KHOJ_DJANGO_SECRET_KEY
         generateValue: true
       - key: KHOJ_DEBUG
