@@ -2,7 +2,6 @@ services:
   # PostgreSQL Database
   - type: pserv
     name: khoj-database
-    env: postgresql
     plan: starter
 
   # Khoj Web Service
@@ -30,20 +29,11 @@ services:
           name: khoj-database
           property: port
       - key: POSTGRES_USER
-        fromService:
-          type: pserv
-          name: khoj-database
-          property: user
+        value: "khoj_user"
       - key: POSTGRES_PASSWORD
-        fromService:
-          type: pserv
-          name: khoj-database
-          property: password
+        generateValue: true
       - key: POSTGRES_DB
-        fromService:
-          type: pserv
-          name: khoj-database
-          property: database
+        value: "khoj"
       - key: KHOJ_DJANGO_SECRET_KEY
         generateValue: true
       - key: KHOJ_DEBUG
