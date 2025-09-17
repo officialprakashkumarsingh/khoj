@@ -29,6 +29,10 @@
 
 <a href="https://trendshift.io/repositories/10318" target="_blank"><img src="https://trendshift.io/api/badge/repositories/10318" alt="khoj-ai%2Fkhoj | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a>
 
+<br /><br />
+
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/khoj-ai/khoj)
+
 </div>
 
 ***
@@ -65,9 +69,18 @@ Go to https://app.khoj.dev to see Khoj live.
 ## Full feature list
 You can see the full feature list [here](https://docs.khoj.dev/category/features).
 
-## Self-Host
+## Deploy & Self-Host
 
-To get started with self-hosting Khoj, [read the docs](https://docs.khoj.dev/get-started/setup).
+### 🚀 One-Click Deploy to Render
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/khoj-ai/khoj)
+
+Deploy Khoj to Render with a single click. No setup required - just click the button above and follow the prompts.
+
+### 🐳 Docker Deployment
+To get started with self-hosting Khoj using Docker, [read the docs](https://docs.khoj.dev/get-started/setup).
+
+### 📋 Manual Setup
+For manual installation and setup, [read the docs](https://docs.khoj.dev/get-started/setup).
 
 ## Enterprise
 

@@ -1,0 +1,12 @@
+{
+  "name": "khoj-render-deploy",
+  "version": "1.0.0",
+  "description": "Deploy Khoj to Render with one click",
+  "scripts": {
+    "build": "cd src/interface/web && npm install && npm run build && cd ../../../ && python src/khoj/manage.py collectstatic --noinput"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  }
+}
